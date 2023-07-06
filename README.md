@@ -13,3 +13,10 @@ react
 - Error Handling
 
 
+two type of export/Import
+export default componant
+import componant from "path"
+
+Name export/import
+export const componant
+import {componant} from  "path"
