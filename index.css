@@ -21,7 +21,7 @@
 .rest-card {
   
     background-color: #f0f0f0;
-    width: 200px;
+    width: 208px;
     margin: 10px;
     padding: 11px; 
 }
@@ -38,4 +38,9 @@
 }
 .rest-logo {
   width: 100%;
+}
+.filter-btn{
+  margin: 10px;
+  /* padding: 5px 5px; */
+  cursor: pointer;
 }
