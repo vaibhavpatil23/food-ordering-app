@@ -15,7 +15,7 @@ const Body = () => {
     const json = await data.json();
     console.log(json);
     setlistofRestaurants(json.data.cards[2].data.data.cards);
-  };
+   }
   return (
     <div className="body">
       <div className="Filter">
@@ -35,7 +35,6 @@ const Body = () => {
         {listofRestaurants.map((restaurant) => (
           <RestaurentCard key={restaurant.data.id} resData={restaurant} />
         ))}
-        {/* <RestaurentCard resName="KFC" cuisine="Burger,Fast Food" /> */}
       </div>
     </div>
   );
