@@ -42,7 +42,7 @@
 }
 .filter-btn {
   cursor: pointer;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 11px;
   margin-left: 12px;
   display: flex;
@@ -59,7 +59,7 @@ margin: 20px;
 width: 239px;
 height: 380px;
 /* background-color: #f0f0f0; */
-background-color: #7a5e5e;
+background-color: #dfc3c3;
 
 }
 .login{
