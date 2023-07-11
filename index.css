@@ -78,3 +78,7 @@ background-color: #dfc3c3;
   padding: 3px;
 
 }
+.user-card{
+  padding: 10px;
+  border: 1px solid black;
+}
