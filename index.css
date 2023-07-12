@@ -26,7 +26,7 @@
 }
 .res-container {
   flex-wrap: wrap;
-  display: flex;
+  display: flex;                   
   justify-content: center;
   /* align-content: center; */
 }

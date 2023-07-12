@@ -5,9 +5,9 @@ const About = () => {
     <div>
       <h1>About</h1>
       <h2>This is Namaste React and Vaibhav patil</h2>
-      <User/>
+      {/* <User name={"vaibhav patil is here"}/> */}
 
-      <UserClass/>
+      <UserClass name={"Brother"}  location={"maharastra in Jalgoan"}/>
     </div>
   );
 };
