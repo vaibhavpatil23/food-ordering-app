@@ -10,7 +10,7 @@ class About extends Component {
       <div>
         <h1>About Class comoonant</h1>
         <h2>This is Namaste React and Vaibhav patil</h2>
-        <UserClass name={"Brother"} location={"maharastra in Jalgoan"} />
+        <UserClass name={"vaibhav patil"} location={"maharastra in Jalgoan"} />
       </div>
     );
   }
