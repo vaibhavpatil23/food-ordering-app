@@ -2,7 +2,7 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestorantMenu from "../utils/useRestourant";
 
-  const RestorantMenu = () => {
+const RestorantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestorantMenu(resId);
 
