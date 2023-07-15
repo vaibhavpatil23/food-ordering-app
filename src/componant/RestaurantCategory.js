@@ -1,16 +1,23 @@
+import { useState } from "react";
 import Itemlist from "./Itemlist";
 
-const RestarantCategory = ({ data }) => {
+const RestarantCategory = ({ data, showItems,setShowIndex }) => {
+  const handelClick = () => {
+    setShowIndex()
+  }
   return (
     <div>
       <div className="w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 ">
-        <div className="flex justify-between">
-        <span className="font-bold text-lg">
-          {data.titel}({data.itemCards.length})
-        </span>
-        <span>⬇️</span>
+        <div
+          className="flex justify-between cursor-pointer"
+          onClick={handelClick}
+        >
+          <span className="font-bold text-lg">
+            {data.titel}({data.itemCards.length})
+          </span>
+          <span>⬇️</span>
         </div>
-        <Itemlist items={data.itemCards} />
+        {showItems && <Itemlist items={data.itemCards} />}
       </div>
     </div>
   );
