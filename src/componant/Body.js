@@ -1,4 +1,4 @@
-import RestaurentCard from "./Restarantcard";
+import RestaurentCard, { withPromotedLabel } from "./Restarantcard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ const Body = () => {
   const [filteredRestaurant, setfilteredRestaurant] = useState([]);
 
   const [searchText, setSearchText] = useState("");
+  const RestaurentCardPromoted = withPromotedLabel(RestaurentCard);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -20,8 +22,11 @@ const Body = () => {
     setlistofRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setfilteredRestaurant(json?.data?.cards[2]?.data?.data?.cards);
   };
-const onlineStatus = useOnlineStatus()
-if(onlineStatus === false) return <h1>Look like Your offline!! Please check your internet connection</h1>
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false)
+    return (
+      <h1>Look like Your offline!! Please check your internet connection</h1>
+    );
   return listofRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
@@ -36,7 +41,8 @@ if(onlineStatus === false) return <h1>Look like Your offline!! Please check your
               setSearchText(e.target.value);
             }}
           />
-          <button className="px-4 py-2 bg-green-100 m-4 rounded-lg"
+          <button
+            className="px-2 py-2 bg-green-100 m-2 rounded-lg"
             onClick={() => {
               const filteredRestaurant = listofRestaurants.filter((res) =>
                 res.data.name.toLowerCase().includes(searchText.toLowerCase())
@@ -47,20 +53,19 @@ if(onlineStatus === false) return <h1>Look like Your offline!! Please check your
             Search
           </button>
         </div>
-        <div className="Search m-4 p-4 flex items-center" >
-        <button
-          className="px-4 py-2 bg-gray-100 rounded-lg"
-          onClick={() => {
-            const Filterlist = listofRestaurants.filter(
-              (res) => res.data.avgRating > 4
-            );
-            setlistofRestaurants(Filterlist);
-          }}
-        >
-          Top Rated Restarant
-        </button>
+        <div className="Search m-2 p-4 flex items-center">
+          <button
+            className="px-2 py-2 bg-gray-100 rounded-lg"
+            onClick={() => {
+              const Filterlist = listofRestaurants.filter(
+                (res) => res.data.avgRating > 4
+              );
+              setlistofRestaurants(Filterlist);
+            }}
+          >
+            Top Rated Restarant
+          </button>
         </div>
-     
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => (
@@ -68,7 +73,11 @@ if(onlineStatus === false) return <h1>Look like Your offline!! Please check your
             key={restaurant.data.id}
             to={"/restaurants/" + restaurant.data.id}
           >
-            <RestaurentCard resData={restaurant} />
+            {restaurant.data.promoted ? (
+              <RestaurentCardPromoted resData={restaurant} />
+            ) : (
+              <RestaurentCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
