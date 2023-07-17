@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { CDN_URL } from "../utils/constant";
+import UserContext from "../utils/UserContext";
+// import UserContext from "../utils/UserContext";
 
 const RestaurentCard = (props) => {
   const { resData } = props;
+  const {loggedInUser} = useContext(UserContext);
   const {
     cloudinaryImageId,
     name,
@@ -20,10 +24,11 @@ const RestaurentCard = (props) => {
         RS.{costForTwo / 100} FOR TWO
       </h4>
       <h4 className="font-bold py-2 text-center">{deliveryTime}minutes</h4>
+      <h4> User : {loggedInUser}</h4>
+      {/* className="font-bold py-2 text-center" */}
     </div>
   );
 };
-
 export const withPromotedLabel = (RestaurentCard) => {
   return (props) => {
     return (
