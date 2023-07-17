@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Itemlist from "./Itemlist";
 
-const RestarantCategory = ({ data, showItems,setShowIndex }) => {
+const RestarantCategory = ({ data, showItems,setShowIndex,dummy }) => {
   const handelClick = () => {
     setShowIndex()
   }
