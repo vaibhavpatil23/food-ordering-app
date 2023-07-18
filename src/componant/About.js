@@ -15,7 +15,7 @@ class About extends Component {
             {({loggedInUser}) => <h1 className="text-xl font-bold">{loggedInUser}</h1>}
           </UserContext.Consumer>
         </div>
-        <h2>This is Namaste React and Vaibhav patil</h2>
+        <h2>This is Namaste React and Vaibhav Patil</h2>
         <UserClass name={"vaibhav patil"} location={"maharastra in Jalgoan"} />
       </div>
     );
