@@ -30,9 +30,7 @@ const Body = () => {
       <h1>Look like Your offline!! Please check your internet connection</h1>
     );
 
-const { loggedInUser ,setUserName} = useContext(UserContext)
-
-
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   return listofRestaurants.length === 0 ? (
     <Shimmer />
@@ -74,9 +72,12 @@ const { loggedInUser ,setUserName} = useContext(UserContext)
           </button>
         </div>
         <div className="Search m-2 p-4 flex items-center">
-      <label>UserName:</label>
-      <input className="border border-black" value={loggedInUser}
-      onChange={(e) => setUserName(e.target.value)}/>
+          <label>UserName:</label>
+          <input
+            className="border border-black"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="flex flex-wrap">
