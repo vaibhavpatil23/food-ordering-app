@@ -1,5 +1,5 @@
 import { LOGO_URL } from "../utils/constant";
-import { useState,useContext } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useonlinestatus";
 import UserContext from "../utils/UserContext";
@@ -9,8 +9,8 @@ const Header = () => {
 
   const onlineStatus = useOnlineStatus();
 
-  const {loggedInUser} = useContext(UserContext)
-  console.log(loggedInUser)
+  const { loggedInUser } = useContext(UserContext);
+  console.log(loggedInUser);
 
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg">

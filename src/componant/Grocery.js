@@ -6,4 +6,4 @@ const Grocery = () => {
     </h1>
   );
 };
-export default Grocery
+export default Grocery;

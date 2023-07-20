@@ -12,7 +12,9 @@ class About extends Component {
         <div>
           LoggedIn User
           <UserContext.Consumer>
-            {({loggedInUser}) => <h1 className="text-xl font-bold">{loggedInUser}</h1>}
+            {({ loggedInUser }) => (
+              <h1 className="text-xl font-bold">{loggedInUser}</h1>
+            )}
           </UserContext.Consumer>
         </div>
         <h2>This is Namaste React and Vaibhav Patil</h2>
@@ -20,29 +22,5 @@ class About extends Component {
       </div>
     );
   }
-} 
+}
 export default About;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

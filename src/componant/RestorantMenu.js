@@ -7,7 +7,7 @@ import { useState } from "react";
 const RestorantMenu = () => {
   const { resId } = useParams();
 
-  const dummy = " dummy data"
+  const dummy = " dummy data";
 
   const resInfo = useRestorantMenu(resId);
 
@@ -21,7 +21,7 @@ const RestorantMenu = () => {
   const { itemCards } =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
   // console.log(resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
-  console.log(itemCards)
+  console.log(itemCards);
 
   const categories =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
@@ -41,8 +41,8 @@ const RestorantMenu = () => {
           key={category?.card?.card.title}
           data={category?.card?.card}
           showItems={index === showIndex ? true : false}
-             setShowIndex={() => setShowIndex(index)}
-          dummy = {dummy}
+          setShowIndex={() => setShowIndex(index)}
+          dummy={dummy}
         />
       ))}
     </div>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Itemlist from "./Itemlist";
 
-const RestarantCategory = ({ data, showItems,setShowIndex,dummy }) => {
+const RestarantCategory = ({ data, showItems, setShowIndex, dummy }) => {
   const handelClick = () => {
-    setShowIndex()
-  }
+    setShowIndex();
+  };
   return (
     <div>
       <div className="w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-4 ">
