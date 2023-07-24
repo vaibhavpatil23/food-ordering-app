@@ -24,22 +24,19 @@ const Header = () => {
         <ul className="flex p-4 m-4 font-bold text-lg">
           <li className="px-4">Online Status : {onlineStatus ? "		✅" : "	🔴"}</li>
           <li className="px-4">
-            {" "}
             <Link to="/">Home</Link>
           </li>
           <li className="px-4">
             <Link to="about">About</Link>
           </li>
           <li className="px-4">
-            {" "}
             <Link to="contact">Contact Us</Link>
           </li>
           <li className="px-4">
             <Link to="grocery">Grocery</Link>
           </li>
           <li className="px-4">
-            {" "}
-            <Link to="Cards">Cart - ({CartItems.length} items)</Link>
+            <Link to="Cart">Cart - ({CartItems.length} items)</Link>
           </li>
           <button
             className="login"
