@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 const Cart = () => {
 
 const CartItems = useSelector((store) => store.Cart.items)
-
+ 
 const dispatch = useDispatch()
 const handelClearcart = () => {
 dispatch(clearCart())
