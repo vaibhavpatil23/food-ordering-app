@@ -39,6 +39,7 @@ const Header = () => {
           <li className="px-4">
             <Link to="Cart">Cart - ({CartItems.length} items)</Link>
           </li>
+         
           <button
             className="login"
             onClick={() => {
@@ -49,10 +50,10 @@ const Header = () => {
           >
             {btnNameReact}
           </button>
-          <li className="px-4 font-extrabold">{loggedInUser}</li>
-        </ul>
-      </div>
-    </div>
+//           <li className="px-4 font-extrabold">{loggedInUser}</li>
+//         </ul>
+//       </div>
+//     </div>
   );
 };
 export default Header;
