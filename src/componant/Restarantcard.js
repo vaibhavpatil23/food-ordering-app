@@ -19,7 +19,7 @@ const RestaurentCard = (props) => {
       <img className="rounded-lg" src={CDN_URL + cloudinaryImageId} />
       <h3 className="font-bold py-2 text-center">{name}</h3>
       <h4 className="font-bold py-2 text-center">{cuisines.join(" ,")}</h4>
-      <h4 className="font-bold py-2 text-center">{avgRating} start</h4>
+      <h4 className="font-bold py-2 text-center">{avgRating} star</h4>
       <h4 className="font-bold py-2 text-center">
         RS.{costForTwo / 100} FOR TWO
       </h4>
