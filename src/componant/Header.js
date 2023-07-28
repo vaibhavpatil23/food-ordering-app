@@ -14,6 +14,8 @@ const Header = () => {
   console.log(loggedInUser);
 
 
+  // const CartItems = useSelector((store) => store.Cart.items);
+
   const CartItems = useSelector((store) => store.Cart.items);
 
   return (
