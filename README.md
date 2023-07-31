@@ -13,10 +13,24 @@ react
 - Error Handling
 
 
-two type of export/Import
+# two type of export/Import
 export default componant
 import componant from "path"
 
 Name export/import
 export const componant
 import {componant} from  "path"
+
+# Redux Toolkit
+- Install the @reduxjs/toolkit and react-redux
+- Build our Store
+- connect our store to our app
+- slice (CartSlice)
+- Dispatch (action)
+- Selectore
+
+# Type of testing (Devloper)
+
+. Unit testing
+. Integration testing
+. End to End testing
