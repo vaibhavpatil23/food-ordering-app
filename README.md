@@ -34,3 +34,9 @@ import {componant} from  "path"
 . Unit testing
 . Integration testing
 . End to End testing
+
+# Setting up testing app
+- Install react-testing library 
+- install jest 
+- install babel dependencei
+- configure babel
