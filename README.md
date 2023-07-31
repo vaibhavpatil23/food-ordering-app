@@ -17,7 +17,7 @@ react
 export default componant
 import componant from "path"
 
-Name export/import
+# Name export/import
 export const componant
 import {componant} from  "path"
 
@@ -40,3 +40,5 @@ import {componant} from  "path"
 - install jest 
 - install babel dependencei
 - configure babel
+- configure parcel config file to disable default babel transpilation
+- install jsdom library
