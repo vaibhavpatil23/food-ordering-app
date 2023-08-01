@@ -15,7 +15,7 @@ const Header = () => {
 
   // const CartItems = useSelector((store) => store.Cart.items);
 
-  const CartItems = useSelector((store) => store.Cart.items);
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="flex justify-between bg-pink-100 shadow-lg">
@@ -38,7 +38,7 @@ const Header = () => {
             <Link to="grocery">Grocery</Link>
           </li>
           <li className="px-4">
-            <Link to="Cart">Cart - ({CartItems.length} items)</Link>
+            <Link to="Cart">Cart - ({cartItems.length} items)</Link>
           </li>
           <button
             className="login"
