@@ -11,7 +11,7 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
   const RestaurentCardPromoted = withPromotedLabel(RestaurentCard);
-   
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -27,7 +27,7 @@ const Body = () => {
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
-      <h1 >Look like Your offline!! Please check your internet connection</h1>
+      <h1>Look like Your offline!! Please check your internet connection</h1>
     );
 
   const { loggedInUser, setUserName } = useContext(UserContext);
