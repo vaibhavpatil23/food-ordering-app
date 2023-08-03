@@ -63,7 +63,7 @@ const Body = () => {
             className="px-2 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
               const Filterlist = listofRestaurants.filter(
-                (res) => res.data.avgRating > 4
+                (res) => res.data.avgRating > 3.9
               );
               setlistofRestaurants(Filterlist);
             }}
