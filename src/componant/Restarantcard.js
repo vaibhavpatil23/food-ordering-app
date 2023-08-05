@@ -43,3 +43,4 @@ export const withPromotedLabel = (RestaurentCard) => {
 };
 
 export default RestaurentCard;
+  
