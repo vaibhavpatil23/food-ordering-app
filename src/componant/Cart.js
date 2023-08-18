@@ -19,7 +19,7 @@ const Cart = () => {
           className="p-2 m-2 bg-black text-white rounded-lg"
           onClick={handelClearcart}
         >
-          Clear Cart
+          Clear
         </button>
         {CartItems.length === 0 && <h1>Cart is Empty Add Items to The Cart</h1>}
         <Itemlist items={CartItems} />
