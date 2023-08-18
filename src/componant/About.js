@@ -8,7 +8,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <h1>About Us</h1>
+        <h1 className="">About Us</h1>
         <div>
           LoggedIn User  
           <UserContext.Consumer>
@@ -17,7 +17,7 @@ class About extends Component {
             )}
           </UserContext.Consumer>
         </div>
-        <h2>This is React js</h2>
+        <h2 className="p-2 m-2">This is React js</h2>
         <UserClass name={"vaibhav patil"} location={"maharastra in Jalgoan"} />
       </div>
     );
