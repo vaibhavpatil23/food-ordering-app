@@ -27,7 +27,7 @@ const Body = () => {
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
-      <h1>Look like Your offline!!! Please Check your internet connection</h1>
+      <h1>Look like Your offline!! Please Check your internet connection</h1>
     );
 
   const { loggedInUser, setUserName } = useContext(UserContext);
@@ -58,12 +58,12 @@ const Body = () => {
             Search
           </button>
         </div>
-        <div className="Search m-2 p-4 flex items-center">
+        <div className="Search m-2 p-3 flex items-center">
           <button
             className="px-2 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
               const Filterlist = listofRestaurants.filter(
-                (res) => res.data.avgRating > 3.9
+                (res) => res.data.avgRating > 4.2
               );
               setlistofRestaurants(Filterlist);
             }}
@@ -71,7 +71,7 @@ const Body = () => {
             Top Rated Restarant
           </button>
         </div>
-        <div className="Search m-2 p-4 flex items-center">
+        <div className="Search m-3 p-4 flex items-center">
           <label>UserName:</label>  
           <input
             className="border border-black"
