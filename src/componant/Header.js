@@ -13,8 +13,6 @@ const Header = () => {
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
 
-  // const CartItems = useSelector((store) => store.Cart.items);
-
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
