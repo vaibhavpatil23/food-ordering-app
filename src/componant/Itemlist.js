@@ -2,7 +2,7 @@ import { CDN_URL } from "../utils/constant";
 import { addItem } from "../utils/CartSlice";
 import { useDispatch } from "react-redux";
 
-const Itemlist = ({items, dummy}) => {
+const Itemlist = ({ items, dummy }) => {
   const dispatch = useDispatch;
 
   const handleAddItem = (item) => {
@@ -32,7 +32,7 @@ const Itemlist = ({items, dummy}) => {
               {" "}
               <button
                 className="p-2 mx-1 rounded-lg bg-black text-white shadow-lg m-auto"
-                onClick={()=>handleAddItem(item)}
+                onClick={() => handleAddItem(item)}
               >
                 Add +
               </button>
