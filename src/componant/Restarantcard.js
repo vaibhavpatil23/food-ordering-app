@@ -24,7 +24,6 @@ const RestaurentCard = (props) => {
       </h4>
       <h4 className="font-bold py-2 text-center">{deliveryTime}Minutes</h4>
       <h4> User : {loggedInUser}</h4>
-      {/* className="font-bold py-2 text-center" */}
     </div>
   );
 };
