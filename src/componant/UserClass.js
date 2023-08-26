@@ -11,8 +11,6 @@ class UserClass extends React.Component {
     };
   }
   async componentDidMount() {
-    // console.log("child componentDidMount");
-
     const data = await fetch("https://api.github.com/users/vaibhavpatil23");
     const json = await data.json();
     this.setState({
@@ -23,8 +21,6 @@ class UserClass extends React.Component {
   }
   render() {
     const { name, location, avatar_url } = this.state.useInfo;
-
-    // const { name, location } = this.props;
     return (
       <div className="user-card">
         <img src={avatar_url} />
