@@ -47,14 +47,6 @@ const Header = () => {
             }}
           >
             {btnNameReact}
-            {/* </button>
-          // <li className="px-4 font-extrabold">{loggedInUser}</li>
-          //{" "}
-        </ul>
-        //{" "}
-      </div>
-      //{" "}
-    </div> */}
           </button>
           <li className="px-4 font-extrabold">{loggedInUser}</li>
         </ul>
