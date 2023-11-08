@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useonlinestatus";
-import UserContext from "../utils/UserContext";  
+import UserContext from "../utils/UserContext";
 import { useContext } from "react";
 const Body = () => {
   const [listofRestaurants, setlistofRestaurants] = useState([]);
@@ -78,7 +78,7 @@ const Body = () => {
             value={loggedInUser}
             onChange={(e) => setUserName(e.target.value)}
           />
-        </div>
+        </div>vgt                                                                      
       </div>
       <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => (
@@ -96,5 +96,7 @@ const Body = () => {
       </div>
     </div>
   );
-};
+}; 
+
+
 export default Body;
